@@ -1,0 +1,68 @@
+body,
+html {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background: url("../img/office.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+main {
+    border: 3px solid rgb(212, 133, 47);
+    border-radius: 29px;
+    width: 500px;
+    margin: 7% auto;
+    background-color: rgba(238, 162, 82, 0.863);
+    padding: 17px;
+}
+
+.screen {
+    min-height: 70px;
+    background-color: #ecf8f8;
+    border-radius: 12px;
+    margin-bottom: 47px;
+    text-align: right;
+    padding: 7px;
+}
+
+.screen div {
+    margin: 11px;
+}
+
+.btn-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 7px;
+}
+
+.btn-container div {
+    padding: 17px;
+    border: solid 1px #ecf8f8;
+    cursor: pointer;
+    background-image: linear-gradient(#edc8c9, #eee4e1); /* #edc8c9 */
+    border-radius: 7px;
+}
+
+.btn-container div:hover {
+    transform: translate3d(0, -2px, 0);
+}
+
+.zero {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#equal {
+    grid-column-start: 4;
+    grid-row-start: 4;
+    grid-row-end: 6;
+}
+
+@media only screen and (max-width:500px) {
+    main {
+        width: 100vw;
+        min-width: max-content;
+    }
+}
