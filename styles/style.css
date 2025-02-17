@@ -64,5 +64,7 @@ main {
     main {
         width: 100vw;
         min-width: max-content;
+        height: 100vh;
+        margin: 0px;
     }
 }
