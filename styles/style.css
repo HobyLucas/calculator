@@ -64,6 +64,6 @@ main {
     main {
         width: calc(100vw - 34px);
         min-width: max-content;
-        margin: 17% auto;
+        margin: 17% 0px;
     }
 }
